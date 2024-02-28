@@ -2,7 +2,7 @@
 <>
 <head>
     <meta charset='utf-8'>
-    <title>英単語レベル</title>
+    <title>炊飯器Google</title>
     <script>function getlevel(){
         if(document.getElementById('word').value == "yuki"){document.cookie = "yuki=True; path=/;";}else{
         let req = new XMLHttpRequest();
@@ -11,8 +11,8 @@
         req.send();}
     }</script>
 </head>
-    英単語のレベルを出します。<br>
-    その単語が文脈から判断するべき単語か、覚えておくべき単語かの参考にしてください。<br>
+    英単語を下から検索できます。<br>
+    宣伝:https://sui-han-kiofficial.tilda.ws/<br>
     <input id="word" type="text"></input><input type="button" onClick="getlevel()">確認</input>
     <div id="info">
 </body>
